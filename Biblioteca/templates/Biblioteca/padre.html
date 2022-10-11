@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Biblioteca Virtual</h1>
+    <h3>Brindamos la mayor variedad de libros</h3>
+
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'libros' %}">Libros</a>
+            <a class="navbar-brand" href="{% url 'empleados' %}">Empleados</a>
+            <a class="navbar-brand" href="{% url 'clientes' %}">Clientes</a>
+        </div>
+    </nav>
+
+    {% block contenidoquecambia %} 
+    {% endblock %}   
+</body>
+</html>

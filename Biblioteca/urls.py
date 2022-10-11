@@ -15,5 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Biblioteca.views import (
+    mostrar_inicio,
+    mostrar_libros,
+    mostrar_empleados,
+    mostrar_clientes,
+    ver_nav
+)
 
-urlpatterns = []
+
+urlpatterns = [
+    path("inicio/", mostrar_inicio, name="inicio"),
+    path("libros/", mostrar_libros, name="libros"),
+    path("empleados/", mostrar_empleados, name="empleados"),
+    path("clientes/", mostrar_clientes, name="clientes"),
+    path("ver-nav/", ver_nav, name="nav"),
+]
