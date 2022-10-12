@@ -14,7 +14,3 @@ def mostrar_empleados(request):
 def mostrar_clientes(request):
     return render(request, "Biblioteca/clientes.html")
 
-def ver_nav(request):
-    return render(request, "Biblioteca/nav.html")
-
-

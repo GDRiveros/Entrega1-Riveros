@@ -20,7 +20,6 @@ from Biblioteca.views import (
     mostrar_libros,
     mostrar_empleados,
     mostrar_clientes,
-    ver_nav
 )
 
 
@@ -29,5 +28,4 @@ urlpatterns = [
     path("libros/", mostrar_libros, name="libros"),
     path("empleados/", mostrar_empleados, name="empleados"),
     path("clientes/", mostrar_clientes, name="clientes"),
-    path("ver-nav/", ver_nav, name="nav"),
 ]
