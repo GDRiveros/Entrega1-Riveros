@@ -20,6 +20,15 @@ from Biblioteca.views import (
     mostrar_libros,
     mostrar_empleados,
     mostrar_clientes,
+    formulario_de_libros,
+    buscar_libros,
+    buscando,
+    formulario_de_empleados,
+    buscar_empleados,
+    buscando_empleados,
+    formulario_de_clientes,
+    buscar_clientes,
+    buscando_clientes
 )
 
 
@@ -28,4 +37,13 @@ urlpatterns = [
     path("libros/", mostrar_libros, name="libros"),
     path("empleados/", mostrar_empleados, name="empleados"),
     path("clientes/", mostrar_clientes, name="clientes"),
+    path("registro-de-libros/", formulario_de_libros, name="registro-de-libros"),
+    path("busqueda-libros/", buscar_libros, name="busqueda-libros"),
+    path("buscando/", buscando),
+    path("registro-de-empleados/", formulario_de_empleados, name="registro-de-empleados"),
+    path("busqueda-empleados/", buscar_empleados, name="busqueda-empleados"),
+    path("buscando-empleados/", buscando_empleados),
+    path("registro-de-clientes/", formulario_de_clientes, name="registro-de-clientes"),
+    path("busqueda-clientes/", buscar_clientes, name="busqueda-clientes"),
+    path("buscando-clientes/", buscando_clientes),
 ]

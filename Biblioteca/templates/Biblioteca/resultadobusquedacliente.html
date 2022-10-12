@@ -1,0 +1,18 @@
+{% extends "Biblioteca/madre.html" %}
+
+{% block contenidomadre%}
+
+
+<p>Estamos buscando al cliente: {{ apellido }}</p>
+
+{% if clientes_encontrados %}
+
+<ul>
+{% for cliente in cliente_encontrados %}
+    <li>{{cliente.nombre}} {{cliente.apellido}}</li>
+{% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}

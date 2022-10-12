@@ -1,0 +1,17 @@
+{% extends "Biblioteca/madre.html" %}
+
+{% block contenidomadre%}
+
+
+{% if formulario.errors %}
+<p style="color: red;"> ERROR: Alguno de los datos ingresados es incorrecto</p>
+{% endif %}
+
+<form action="" method="POST">{% csrf_token %}
+    <table>
+        {{formulario.as_table}}
+    </table>
+    <input type="submit" value="save">
+</form>
+
+{% endblock %}

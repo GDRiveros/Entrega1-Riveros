@@ -1,0 +1,12 @@
+{% extends "Biblioteca/madre.html" %}
+
+{% block contenidomadre%}
+
+<p>Busque los libros por título:</p>
+
+<form action="/biblioteca/buscando" method="GET">
+    <p><input type="text" name="titulo" id="titulo"></p>
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock %}
