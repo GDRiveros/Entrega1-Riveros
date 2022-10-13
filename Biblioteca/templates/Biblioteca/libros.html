@@ -7,17 +7,17 @@
     <title>libros</title>
 </head>
 <body>
-    {% extends "Biblioteca/padre.html" %}
+    {% extends "Biblioteca/madre.html" %}
 
-    {% block contenidoquecambia %}
+    {% block contenidomadre %}
 
     <h4>Eliga la acción que desea llevar a cabo:</h4>
 
     <nav class="navbar navbar-light bg-light static-top">
         <div class="container">
-            <a class="navbar-brand" href="{% url 'registro-de-libros' %}">Registrar nuevos libros</a> <br>
-            <a class="navbar-brand" href="{% url 'busqueda-libros' %}">Buscar Libros</a> <br>
-            <a class="navbar-brand" href="{% url 'inicio' %}">Volver a Inicio</a>
+            <a href="{% url 'registro-de-libros' %}">Registrar nuevos libros</a> <br>
+            <a href="{% url 'busqueda-libros' %}">Buscar Libros</a> <br>
+            <a href="{% url 'inicio' %}">Volver a Inicio</a>
         </div>
     </nav>
 

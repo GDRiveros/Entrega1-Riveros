@@ -5,14 +5,18 @@
 
 <p>Estamos buscando al cliente: {{ apellido }}</p>
 
-{% if clientes_encontrados %}
+{% if cliente %}
 
 <ul>
-{% for cliente in cliente_encontrados %}
+{% for cliente in cliente %}
     <li>{{cliente.nombre}} {{cliente.apellido}}</li>
 {% endfor %}
 </ul>
 
 {% endif %}
+
+<br>
+
+<a href="{% url 'inicio' %}">Volver a Inicio</a>
 
 {% endblock %}
