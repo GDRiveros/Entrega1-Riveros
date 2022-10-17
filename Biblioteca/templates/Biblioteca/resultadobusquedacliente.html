@@ -5,10 +5,10 @@
 
 <p>Estamos buscando al cliente: {{ apellido }}</p>
 
-{% if cliente %}
+{% if clientes_encontrados %}
 
 <ul>
-{% for cliente in cliente %}
+{% for cliente in clientes_encontrados %}
     <li>{{cliente.nombre}} {{cliente.apellido}}</li>
 {% endfor %}
 </ul>

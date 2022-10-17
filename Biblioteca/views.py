@@ -51,7 +51,7 @@ def buscando(request):
 
         contexto = {
             "titulo": titulo_a_buscar,
-            "libro": libro
+            "libros_encontrados": libro
         }
 
         return render(request, "Biblioteca/resultadobusquedalibro.html", contexto)
@@ -87,7 +87,7 @@ def buscando_empleados(request):
 
         contexto = {
             "apellido": apellido_a_buscar,
-            "empleado": empleado
+            "empleados_encontrados": empleado
         }
 
         return render(request, "Biblioteca/resultadobusquedaempleado.html", contexto)
@@ -123,7 +123,7 @@ def buscando_clientes(request):
 
         contexto = {
             "apellido": apellido_a_buscar,
-            "cliente": cliente
+            "clientes_encontrados": cliente
         }
 
         return render(request, "Biblioteca/resultadobusquedacliente.html", contexto)
